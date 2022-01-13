@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.form::before {
+}
+.registr {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  color: rgb(134, 135, 139);
+  border: 1px solid black;
+  width: 320px;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}

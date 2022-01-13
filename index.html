@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Форма</title>
+  </head>
+  <body>
+    <article class="registr">
+      <h1>Register</h1>
+      <p>Create your account,it's free and only takes a minute.</p>
+      <form action="" class="form" method="get">
+        <input
+          class="form1"
+          type="text"
+          placeholder="Firs Name"
+          name="firs-name"
+          pattern="^[A-Z][a-z]{2,10}$"
+          required
+        />
+        <input
+          class="form1"
+          type="text"
+          placeholder="Last Name"
+          name="Last Name"
+          pattern="^[A-Z][a-z]{2,10}$"
+          required
+        />
+        <input
+          type="email"
+          pattern="^[A-Za-z0-9_-]{3,32}@[a-z]{2,10}\.[a-z]{1,5}$"
+          name="email"
+          required
+          placeholder="Email"
+        />
+        <input
+          type="passwod"
+          name="password"
+          placeholder="Password"
+          pattern="^(?=.*?[A-Z])(?=.*?[0-9]).{3,16}$"
+          required
+        />
+        <input
+          type="password"
+          name="confirm-password"
+          placeholder="Confirm assword"
+          pattern="^(?=.*?[A-Z])(?=.*?[0-9]).{3,16}$"
+          required
+        />
+        <input type="checkbox">
+      </form>
+    </article>
+  </body>
+</html>
