@@ -9,7 +9,7 @@
   </head>
   <body>
     <article class="registr">
-      <h1>Register</h1>
+      <h1 class="register">Register</h1>
       <p>Create your account,it's free and only takes a minute.</p>
       <form action="" class="form" method="get">
         <input
@@ -49,8 +49,21 @@
           pattern="^(?=.*?[A-Z])(?=.*?[0-9]).{3,16}$"
           required
         />
-        <input type="checkbox">
+        <input class="checkbox" type="checkbox" name="Privacy Policy" />I accept
+        the Terms of Use & Privacy Policy
+        <button class="button" type="submit">Register Now</button>
       </form>
     </article>
   </body>
+  <main>
+    <picture class="wrapper">
+      <source
+        srcset="./assets/img/1.jpeg"
+        type="image/jpeg"
+        media="(max-width:500px)" />
+        <source srcset="./assets/img/2.jpeg" type="image/jpeg" media="(min-width:600px) and (max-width:900px)"> 
+
+      <img src="./assets/img/1.jpeg" alt="picture" class="img"
+    /></picture>
+  </main>
 </html>
