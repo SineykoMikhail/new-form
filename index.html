@@ -10,10 +10,10 @@
   <body>
     <article class="registr">
       <h1 class="register">Register</h1>
-      <p>Create your account,it's free and only takes a minute.</p>
+      <p class="text">Create your account,it's free and only takes a minute.</p>
       <form action="" class="form" method="get">
-        <input
-          class="form1"
+        <div class="imput-wrapper"><input
+          class="form1 input"
           type="text"
           placeholder="Firs Name"
           name="firs-name"
@@ -21,14 +21,16 @@
           required
         />
         <input
-          class="form1"
+          class="form1 input"
           type="text"
           placeholder="Last Name"
           name="Last Name"
           pattern="^[A-Z][a-z]{2,10}$"
           required
-        />
+        /></div>
+        
         <input
+          class="input"
           type="email"
           pattern="^[A-Za-z0-9_-]{3,32}@[a-z]{2,10}\.[a-z]{1,5}$"
           name="email"
@@ -36,6 +38,7 @@
           placeholder="Email"
         />
         <input
+          class="input"
           type="passwod"
           name="password"
           placeholder="Password"
@@ -43,14 +46,18 @@
           required
         />
         <input
+          class="input"
           type="password"
           name="confirm-password"
           placeholder="Confirm assword"
           pattern="^(?=.*?[A-Z])(?=.*?[0-9]).{3,16}$"
           required
         />
-        <input class="checkbox" type="checkbox" name="Privacy Policy" />I accept
-        the Terms of Use & Privacy Policy
+        <label for=""
+          ><input class="checkbox" type="checkbox" name="Privacy Policy" />I
+          accept the Terms of Use & Privacy Policy</label
+        >
+
         <button class="button" type="submit">Register Now</button>
       </form>
     </article>
@@ -61,7 +68,10 @@
         srcset="./assets/img/1.jpeg"
         type="image/jpeg"
         media="(max-width:500px)" />
-        <source srcset="./assets/img/2.jpeg" type="image/jpeg" media="(min-width:600px) and (max-width:900px)"> 
+      <source
+        srcset="./assets/img/2.jpeg"
+        type="image/jpeg"
+        media="(min-width:600px) and (max-width:900px)" />
 
       <img src="./assets/img/1.jpeg" alt="picture" class="img"
     /></picture>
